@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Animation Test">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Ian M">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wordle Game</title>
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand title" href="#">WURDLE</a>
+</nav>
+
+
+<section class = "game-row row-1">
+<!-- Row #1 -->
+    <div class = "column">
+      <input type="text" class="in-1 b1" id="b1-1" onkeyup="nextKey(this.id)" name="b1a" maxlength="1" minlength="1">
+    </div>
+    <div class = "column">
+      <input type="text" class="in-1 b2" id="b1-2" onkeyup="nextKey(this.id)" maxlength="1" minlength="1">
+    </div>
+    <div class = "column">
+      <input type="text" class="in-1 b3" id="b1-3" onkeyup="nextKey(this.id)" maxlength="1" minlength="1">
+    </div>
+    <div class = "column">
+      <input type="text" class="in-1 b4" id="b1-4" onkeyup="nextKey(this.id)" maxlength="1" minlength="1">
+    </div>
+    <div class = "column">
+      <input type="text" class="in-1 b5" id="b1-5" onkeyup="nextKey(this.id)" maxlength="1" minlength="1">
+    </div>
+</section>
+
+<section class = "game-row row-2">
+  <!-- Row #2 -->
+      <div class = "column">
+        <input type="text" class="in-2 b6" id="b2-1" onkeyup="nextKey(this.id)" name="b2a" maxlength="1" minlength="1" >
+      </div>
+      <div class = "column">
+        <input type="text" class="in-2 b7" id="b2-2" onkeyup="nextKey(this.id)" maxlength="1" minlength="1" >
+      </div>
+      <div class = "column">
+        <input type="text" class="in-2 b8" id="b2-3" onkeyup="nextKey(this.id)" maxlength="1" minlength="1" >
+      </div>
+      <div class = "column">
+        <input type="text" class="in-2 b9" id="b2-4" onkeyup="nextKey(this.id)" maxlength="1" minlength="1" >
+      </div>
+      <div class = "column">
+        <input type="text" class="in-2 b10" id="b2-5" onkeyup="nextKey(this.id)" maxlength="1" minlength="1" >
+      </div>
+  </section>
+
+  <section class = "game-row row-3">
+    <!-- Row #3 -->
+        <div class = "column">
+          <input type="text" class="in-3 b11" id="b3-1" onkeyup="nextKey(this.id)" name="b3a" maxlength="1" minlength="1" >
+        </div>
+        <div class = "column">
+          <input type="text" class="in-3 b12" id="b3-2" onkeyup="nextKey(this.id)" maxlength="1" minlength="1" >
+        </div>
+        <div class = "column">
+          <input type="text" class="in-3 b13" id="b3-3" onkeyup="nextKey(this.id)" maxlength="1" minlength="1" >
+        </div>
+        <div class = "column">
+          <input type="text" class="in-3 b14" id="b3-4" onkeyup="nextKey(this.id)" maxlength="1" minlength="1" >
+        </div>
+        <div class = "column">
+          <input type="text" class="in-3 b15" id="b3-5" onkeyup="nextKey(this.id)" maxlength="1" minlength="1" >
+        </div>
+    </section>
+  
+
+  <section class="submit">
+    <button class="sub-btn">Check</button>
+  </section>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="index.js" charset="utf-8"></script>
+
+</body>
+
+</html>
